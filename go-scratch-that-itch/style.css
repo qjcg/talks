@@ -1,0 +1,46 @@
+.cover {
+  background-image: url("img/granite.jpg");
+  background-size: cover;
+}
+
+.gsti {
+  background-color: darkblue;
+  color: white;
+}
+
+.cat {
+  background-image: url("img/cat2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.tdist {
+  background-image: url("img/tdist.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.gomoving {
+  background-image: url("img/gomoving2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sizeandshape img {
+	display: inline;
+	max-width:100px;
+	max-height:100px;
+	width: 100px;
+	height: 100px;
+}
+
+h1, h2, h3 {
+  font-family: "Droid Sans", "Helvetica Nueue", Arial, sans-serif;
+}
+
+code {
+  font-size: 1.25em;
+}
