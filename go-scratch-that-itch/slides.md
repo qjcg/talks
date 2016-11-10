@@ -3,10 +3,10 @@ author:
     name: John Gosset
     twitter: jgosset_
     github: qjcg
-theme: ./themes/select
+theme: ./vendor/github.com/select/cleaver-select-theme
 controls: true
 progress: false
-output: slides.html
+output: index.html
 style: style.css
 
 -- cover
@@ -30,7 +30,7 @@ style: style.css
 - Small is different
 - Scratching itches
 - Some well-known itches
-- Why go philosophy and features are well-suited to programming in-the-small
+- Why Go philosophy and features are well-suited to programming in-the-small
 
 ---
 
@@ -66,8 +66,9 @@ style: style.css
 
 ### Stephen J. Gould: Size and Shape (cont'd)
 
-- As you scale up software, surface area (ex: public API) can be dragged down
-by supporting utility functions, tooling, boilerplate code, etc
+- As you scale up software, surface area (ex: public API) can be dragged down by
+  supporting utility functions, tooling, boilerplate code, etc
+- Avoid unnecessary complexity
 - Ask: "Can we keep this small?"
 
 ---
@@ -87,7 +88,7 @@ by supporting utility functions, tooling, boilerplate code, etc
 
 ---
 
-### The story of Unix
+### The Story of Unix
 
 - [Space Travel] developed by Ken Thompson on a GE635 system
 
@@ -95,10 +96,10 @@ by supporting utility functions, tooling, boilerplate code, etc
 
 ---
 
-### The story of Unix
+### The Story of Unix
 
-- Wanted to port to PDP7 to avoid Bell Labs' internal usage fees, but OS did
-not satisfy...
+- Wanted to port to PDP7 for better display & graphics system, but also wanted a
+  minimalistic OS to run it on...
 
 <img height=400px src="img/pdp7.jpeg" />
 
@@ -110,8 +111,8 @@ not satisfy...
 
 ### Jennifer Dewalt
 
-- Art student with no programming experience, wanted to learn how to turn her
-creative ideas into code...
+- Art graduate with no programming experience, wanted to learn how to turn her
+  creative ideas into code...
 
 --- gsti
 
@@ -122,15 +123,16 @@ creative ideas into code...
 ### Jennifer Dewalt
 
 - [180 websites in 180 days](http://jenniferdewalt.com/)
-- Each day small, self-contained, open-sourced on GitHub & blogged
+- Each day a new small, self-contained project, open-sourced on GitHub & blogged
 - Approach: JFDI (Just F'n Do It!)
+- She inspires me!
 
 ---
 
 ### One of my own
 
 - Wanted to create something to generate placeholder text and learn more about
-Unicode...
+  Unicode...
 
 --- gsti
 
@@ -141,6 +143,9 @@ Unicode...
 ### One of my own
 
 - [horeb](https://github.com/qjcg/horeb)
+- Small program written to scratch a personal itch
+- Don't like it? Think it's silly? Not your cup of tea?
+- Cool with me! Your opinion of it is **not the point!**
 
 ---
 
@@ -159,7 +164,7 @@ Unicode...
 - Consider existing tools
 - The [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
 - YAGNI
-- Make your objectives clear (see eg.: [README driven development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+- Make your objectives clear (see eg.: [README-driven development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html))
 
 ---
 
@@ -169,9 +174,12 @@ Unicode...
 > Write programs to work together. Write programs to handle text streams, because
 > that is a universal interface. -- Doug McIlroy
 
-- See also: [Rob Pike's Five Rules of Programming](http://users.ece.utexas.edu/~adnan/pike.html)
-	- Acme, an "Integrating" Development Environment ([rsc screencast](https://www.youtube.com/watch?v=dP1xVpMPn8M))
-- [Playground: Line filter](https://play.golang.org/p/mpYwOHj2ma)
+- [Rob Pike's Five Rules of Programming](http://users.ece.utexas.edu/~adnan/pike.html)
+- [Plan9's](https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs) [Acme], an
+  *"Integrating"* Development Environment
+    - Watch [Russ Cox's Tour of Acme screencast](https://www.youtube.com/watch?v=dP1xVpMPn8M)
+
+[Acme]: https://en.wikipedia.org/wiki/Acme_(text_editor)
 
 ---
 
@@ -191,7 +199,7 @@ You Ain't Gonna Need It
 
 <img height=220px width="50px" src="img/gomoving2.png" />
 
-- Consider the name "Go": short, simple, moving and doing
+- Consider the name "Go": short & simple, moving & doing
 - [The Go Spec](https://golang.org/ref/spec) is short and readable
 
 ---
@@ -215,9 +223,9 @@ functional)
 
 ### Polymorphism Without Pain
 
-- [Interfaces](https://gobyexample.com/interfaces) allow reusing code as in the
-OO-style polymorphism, but via composition instead of requiring rigid object
-hierarchies
+- [Interfaces](https://gobyexample.com/interfaces) allow code re-use like with
+  OO-style polymorphism, but via composition instead of requiring rigid object
+  hierarchies
 
 ---
 
@@ -254,10 +262,11 @@ hierarchies
 ### Key Takeaways
 
 Principles when programming in the small:
+- Write down what you want (eg: [README driven development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html))
 - Solve the problem in the concrete first
+- Keep the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) in mind
 - YAGNI
 - When in doubt, use brute force
-- Write down what you want first (ex: [README driven development])
 
 ---
 
@@ -265,11 +274,11 @@ Principles when programming in the small:
 
 Go features good for programming in the small:
 - small spec
-- says "no" to 
-- Easy to deploy
-- interfaces: polymorphism / code reuse without rigid object hierarchies
-- community is vibrant, 3rd party libraries are good compared to competing
-language ecosystems (and getting better)
+- says "no" to keep the language small
+- easy deployment
+- interfaces for polymorphic code reuse without rigid object hierarchies
+- community is vibrant, 3rd party libraries compare favorably to other language
+  ecosystems (and getting better)
 
 ---
 
@@ -277,7 +286,7 @@ language ecosystems (and getting better)
 
 - Programming in the small is good
 - Go is good for programming in the small
-- Your problems matter
+- **Your problems matter**!
 - You should...
 
 --- gsti
@@ -288,16 +297,26 @@ language ecosystems (and getting better)
 
 ### References
 
-- [README Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
-- [Space Travel](https://www.bell-labs.com/usr/dmr/www/spacetravel.html)
-- [Programming in the large and programming in the small]
-- [Worse is Better](https://en.wikipedia.org/wiki/Worse_is_better)
-- [Stephen J Gould: Size and Shape](http://www.naturalhistorymag.com/editors_pick/1974_01_pick.html)
-- [Jennifer Dewalt: 180 Websites in 180 days](https://jenniferdewalt.com/)
-- [The Art of Unix Programming: The Right Size of Software](http://www.catb.org/esr/writings/taoup/html/ch13s04.html)
-- [Go Proverbs](https://go-proverbs.github.io/)
-- [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
-- [When in doubt, use brute force](http://www.catb.org/jargon/html/B/brute-force.html)
-- [Go is a shop-built jig](http://robnapier.net/go-is-a-shop-built-jig)
+- Approach
+    - [README Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+    - [Programming in the large and programming in the small]
+    - [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
+    - [Worse is Better](https://en.wikipedia.org/wiki/Worse_is_better)
+    - [When in doubt, use brute force](http://www.catb.org/jargon/html/B/brute-force.html)
+    - [Stephen J Gould: Size and Shape](http://www.naturalhistorymag.com/editors_pick/1974_01_pick.html)
+    - [The Art of Unix Programming: The Right Size of Software](http://www.catb.org/esr/writings/taoup/html/ch13s04.html)
 
 [Programming in the large and programming in the small]: https://en.wikipedia.org/wiki/Programming_in_the_large_and_programming_in_the_small
+
+---
+
+### References (cont'd)
+
+- Itches
+    - [The Story of Unix & Space Travel](https://www.bell-labs.com/usr/dmr/www/spacetravel.html)
+    - [Jennifer Dewalt: 180 Websites in 180 days](https://jenniferdewalt.com/)
+    - [horeb](https://github.com/qjcg/horeb)
+- Go
+    - [The Go Spec](https://golang.org/ref/spec)
+    - [Go Proverbs](https://go-proverbs.github.io/)
+    - [Go is a shop-built jig](http://robnapier.net/go-is-a-shop-built-jig)
