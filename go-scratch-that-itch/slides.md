@@ -297,7 +297,7 @@ Go features good for programming in the small:
 
 ### References
 
-- Approach
+- Background
     - [README Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
     - [Programming in the large and programming in the small]
     - [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
