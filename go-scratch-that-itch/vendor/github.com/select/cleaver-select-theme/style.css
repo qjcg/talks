@@ -137,8 +137,6 @@ img.badge {
   position: relative;
   z-index: 2;
   opacity: 1;
-  max-width: 800px;
-  max-height: 600px;
   margin: 80px auto 0 auto;
   padding: 0;
   font-size: 200%;
@@ -220,7 +218,7 @@ h3 {
 }
 
 h1 {
-  margin: 170px 0 0;
+  margin: 100px 0 0;
   font-size: 300%;
   text-align: center;
   line-height: 1.2;
