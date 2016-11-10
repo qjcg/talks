@@ -1,0 +1,14 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/select/cleaver-select-theme",
+			"repository": "https://github.com/select/cleaver-select-theme",
+			"vcs": "git",
+			"revision": "2a128d05033d1f9e58e146de6267b3a1ac048a5f",
+			"branch": "master",
+			"notests": true,
+			"allfiles": true
+		}
+	]
+}
