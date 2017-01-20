@@ -27,6 +27,7 @@ style: style.css
 - Organizations large & small
 - Contractor for [RedHat], and volunteer with the [Software Carpentry
   Foundation] to help research scientists learn programming fundamentals.
+- Believe programming can be for everybody.
 
 [RedHat]: https://www.redhat.com
 [Software Carpentry Foundation]: https://software-carpentry.org
