@@ -16,6 +16,25 @@ style: style.css
 
 ---
 
+### Who?
+
+
+
+- Consultant & software developer (Montreal, Canada)
+- Server software and embedded systems
+- Organizations large & small
+    - Canadian government and FinTech companies to small carpet manufacturers in
+      Saint-Jean-sur-Richelieu, Quebec.
+- Also contractor for [RedHat], and volunteer with the [Software Carpentry
+  Foundation] to help research scientists learn programming fundamentals.
+- Believe coding is a useful skill for anyone to have
+- Passionate about helping make it more accessible to everybody.
+
+[RedHat]: https://www.redhat.com
+[Software Carpentry Foundation]: https://software-carpentry.org
+
+---
+
 ### What?
 
 - "There should be code that does that!"
@@ -84,11 +103,14 @@ style: style.css
 ### Scratching Itches
 
 > Every good work of software starts by scratching a developer's personal itch.
-> -- Eric S. Raymond, The Cathedral and the Bazaar
+> -- Eric S. Raymond, [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
 
-(Currently working on the [ntpsec](https://ntpsec.org) project, he also recently
-wrote: [Rust vs. Go](https://blog.ntpsec.org/2017/01/18/rust-vs-go.html)
-head-to-head comparison).
+Who?
+- Coined the term Open Source and founded the [Open Source Initiative](https://opensource.org)
+- Wrote the guidebook for [NetHack](http://www.nethack.org)
+- Currently working on the [NTPsec](https://ntpsec.org) project, he also
+  two days ago wrote: [Rust vs.  Go](https://blog.ntpsec.org/2017/01/18/rust-vs-go.html) head-to-head
+  comparison).
 
 ---
 
@@ -129,7 +151,7 @@ head-to-head comparison).
 - [180 websites in 180 days](http://jenniferdewalt.com/)
 - Each day a new small, self-contained project, open-sourced on GitHub & blogged
 - Approach: JFDI (Just F'n Do It!)
-- She inspires me!
+- Inspirational!
 
 ---
 
