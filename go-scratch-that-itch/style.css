@@ -7,6 +7,12 @@
   width: auto;
 }
 
+.slide-content img.bioimg {
+  float: right;
+  max-height: 425px;
+  width: auto;
+}
+
 .gsti {
   background-color: darkblue;
   color: white;

@@ -18,17 +18,15 @@ style: style.css
 
 ### Who?
 
+<img class="bioimg" src="img/avatar_small.jpg" />
 
-
+- GitHub: [@qjcg](https://github.com/qjcg)
+- Twitter: [@jgosset_](https://twitter.com/jgosset_)
 - Consultant & software developer (Montreal, Canada)
 - Server software and embedded systems
 - Organizations large & small
-    - Canadian government and FinTech companies to small carpet manufacturers in
-      Saint-Jean-sur-Richelieu, Quebec.
-- Also contractor for [RedHat], and volunteer with the [Software Carpentry
+- Contractor for [RedHat], and volunteer with the [Software Carpentry
   Foundation] to help research scientists learn programming fundamentals.
-- Believe coding is a useful skill for anyone to have
-- Passionate about helping make it more accessible to everybody.
 
 [RedHat]: https://www.redhat.com
 [Software Carpentry Foundation]: https://software-carpentry.org
