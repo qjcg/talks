@@ -86,6 +86,10 @@ style: style.css
 > Every good work of software starts by scratching a developer's personal itch.
 > -- Eric S. Raymond, The Cathedral and the Bazaar
 
+(Currently working on the [ntpsec](https://ntpsec.org) project, he also recently
+wrote: [Rust vs. Go](https://blog.ntpsec.org/2017/01/18/rust-vs-go.html)
+head-to-head comparison).
+
 ---
 
 ### The Story of Unix
@@ -129,7 +133,7 @@ style: style.css
 
 ---
 
-### One of my own
+### A tiny personal example
 
 - Wanted to create something to generate placeholder text and learn more about
   Unicode...
@@ -144,7 +148,7 @@ style: style.css
 
 - [horeb](https://github.com/qjcg/horeb)
 - Small program written to scratch a personal itch
-- Don't like it? Think it's silly? Not your cup of tea?
+- Don't like it? Don't find it useful? Not your cup of tea?
 - Cool with me! Your opinion of it is **not the point!**
 
 ---
