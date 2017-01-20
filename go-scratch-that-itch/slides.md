@@ -109,8 +109,8 @@ Who?
 - Coined the term Open Source and founded the [Open Source Initiative](https://opensource.org)
 - Wrote the guidebook for [NetHack](http://www.nethack.org)
 - Currently working on the [NTPsec](https://ntpsec.org) project, he also
-  two days ago wrote: [Rust vs.  Go](https://blog.ntpsec.org/2017/01/18/rust-vs-go.html) head-to-head
-  comparison).
+  two days ago wrote: [Rust vs.  Go](https://blog.ntpsec.org/2017/01/18/rust-vs-go.html) (head-to-head
+  comparison. Will be implementing new NTPsec functionality in Go).
 
 ---
 
@@ -213,7 +213,7 @@ Who?
 
 You Ain't Gonna Need It
 
-<img height=350px src="img/yagni.png" />
+<img class="slimg" height=400 src="img/yagni.png" />
 
 ---
 
@@ -223,7 +223,7 @@ You Ain't Gonna Need It
 
 ### Go Spec
 
-<img height=220px width="50px" src="img/gomoving2.png" />
+<img height=400px src="img/gomoving2.png" />
 
 - Consider the name "Go": short & simple, moving & doing
 - [The Go Spec](https://golang.org/ref/spec) is short and readable
@@ -256,6 +256,8 @@ functional)
 ---
 
 ### Go is a shop-built jig
+
+<img class="slimg" src="img/jig.jpg" />
 
 - [Blog post by Rob Napier](http://robnapier.net/go-is-a-shop-built-jig)
 
@@ -303,8 +305,7 @@ Go features good for programming in the small:
 - says "no" to keep the language small
 - easy deployment
 - interfaces for polymorphic code reuse without rigid object hierarchies
-- community is vibrant, 3rd party libraries compare favorably to other language
-  ecosystems (and getting better)
+- excellent ecosystem and community
 
 ---
 
