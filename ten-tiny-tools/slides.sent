@@ -1,17 +1,36 @@
-Ten
-Tiny
-Tools
-by John Gosset
-
 @imgs/captioned/old-toolsL.jpg
 
 Carpentry
 
-Takahashi
 
-Alpha quality!
+~ Principles ~
 
-github.com/qjcg/___
+UNIX PHILOSOPHY
+- Write programs that do one thing and do it well.
+- Write programs to work together.
+- Write programs to handle text streams, because
+  that is a universal interface.
+-- Peter H. Salus, A Quarter Century of Unix (1994)
+
+
+
+
+~ Approach ~
+
+"JFDI"
+Just Effin Do It!
+jenniferdewalt.com
+
+Done is better
+than perfect
+
+New Jersey Style
+"Worse is Better"
+Keep the surface area small
+Prefer fewer moving parts
+
+suckless.org
+
 
 Unix Philosophy
 YAGNI
@@ -22,14 +41,28 @@ Like showing
 a journal
 
 
-1. horeb
+This is
+alpha code!
+
+Hope you like it :)
+
+"I don't f*ing care
+if you like it!"
+-- Amy Poehler
+
+github.com/qjcg/___
+
+
+
+1. 4d
+Enumerate the
+4th dimension
+
+
+2. horeb
 Speak in tongues
 
 @imgs/captioned/templeos_oracle.png
-
-2. 4d
-Enumerate the
-4th dimension
 
 
 3. megarepo
@@ -57,3 +90,17 @@ Simply Serve HTTP
 8. brightness
 Screen brightness
 via CLI
+
+
+
+Takeaways:
+- JFDI / GSTI
+- Unix Philosophy
+- Be humble
+- Share!
+
+      Thank You!
+  Twitter: @jgosset_
+     GitHub: @qjcg
+       LinkedIn: 
+linkedin.com/in/gossetj
