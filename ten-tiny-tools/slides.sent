@@ -37,22 +37,31 @@ Inspired by TempleOS
 Enumerate the
 4th dimension
 
+
 3. megarepo
 Download github
 repos as submodules
+qjcg/megarepo
+
 
 4. diplomat
 Generate PDF diplomas
+qjcg/diplomat
+
 
 5. mtlcam
 Download traffic
 cam images
+qjcg/mtlcam
+
 
 6. rps
 Rock Paper Scissors
 
+
 7. servant
 Simply Serve HTTP
+
 
 8. brightness
 Screen brightness
