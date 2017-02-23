@@ -9,6 +9,7 @@ screenshotDir=slide_screenshots
 # have an empty line after it.
 nslides=$(( 1 + $(uniq $slidesFile | grep '^$' | wc -l) ))
 
+
 # Check dependencies.
 for tool in ${dependencies[@]}; do
 	if ! hash $tool 2>/dev/null; then
@@ -21,10 +22,10 @@ done
 xdotool key Super+b
 
 # Start presentation.
-sent < $slidesFile &
+sent $slidesFile &
 
 # Loop over slides and take a screenshot of each.
-# Insert delays via sleep to prevent
+# Insert delays via sleep to prevent incorrect screenshots.
 mkdir -p $screenshotDir
 sleep 2
 for i in $(seq -w $nslides); do
