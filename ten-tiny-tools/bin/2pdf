@@ -29,7 +29,7 @@ sent $slidesFile &
 # Insert delays via sleep to prevent incorrect screenshots.
 # Remove any old images in screenshotDir.
 mkdir -p $screenshotDir
-rm $screenshotDir/*
+rm -f $screenshotDir/*
 sleep $screenshotDelay
 for i in $(seq -w $nslides); do
 	import -window root ${screenshotDir}/${i}.png
