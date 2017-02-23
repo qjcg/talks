@@ -1,9 +1,24 @@
 @imgs/captioned/old-toolsL.jpg
 
+What?
+
 Carpentry
 
+~ Approach ~
 
-~ Principles ~
+"JFDI"
+Just Effin Do It!
+jenniferdewalt.com
+
+New Jersey Style
+"Worse is Better"
+Keep the surface area small
+Prefer fewer moving parts
+
+Done is better
+than perfect
+
+suckless.org
 
 UNIX PHILOSOPHY
 - Write programs that do one thing and do it well.
@@ -12,43 +27,25 @@ UNIX PHILOSOPHY
   that is a universal interface.
 -- Peter H. Salus, A Quarter Century of Unix (1994)
 
-
-
-
-~ Approach ~
-
-"JFDI"
-Just Effin Do It!
-jenniferdewalt.com
-
-Done is better
-than perfect
-
-New Jersey Style
-"Worse is Better"
-Keep the surface area small
-Prefer fewer moving parts
-
-suckless.org
-
-
-Unix Philosophy
-YAGNI
-STDIN
-FUN
-
-Like showing
-a journal
+@imgs/diary.jpg
 
 
 This is
-alpha code!
+ALPHA CODE!
 
 Hope you like it :)
 
 "I don't f*ing care
 if you like it!"
 -- Amy Poehler
+
+Ain't gonna
+win no beauty
+contest
+
+NOT "Your code sucks!"
+BUT "Your code sucks because..."
+AND Patches welcome ;)
 
 github.com/qjcg/___
 
@@ -79,8 +76,9 @@ Download traffic
 cam images
 
 
-6. rps
+6. rps (epicrps)
 Rock Paper Scissors
+(model library + cmd)
 
 
 7. servant
@@ -88,18 +86,43 @@ Simply Serve HTTP
 
 
 8. brightness
-Screen brightness
-via CLI
+Control screen brightness
+
+
+9. elx
+A simple static
+site generator.
+
+
+10. dude
+Table of contents
+and single-section-view
+for man pages.
+
 
 
 
 Takeaways:
 - JFDI / GSTI
 - Unix Philosophy
-- Be humble
+- Be humble & keep learning
 - Share!
 
-      Thank You!
+
+~ Conclusion ~
+
+1. Now tell me about YOUR tools
+
+2. Patches welcome, let's hack together
+
+3. When you get a software itch:
+
+	 REPO
+	README
+	LICENSE
+	  GO!
+
+Thank you & follow me!
   Twitter: @jgosset_
      GitHub: @qjcg
        LinkedIn: 
