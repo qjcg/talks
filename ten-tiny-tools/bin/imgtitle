@@ -1,0 +1,17 @@
+#!/bin/bash
+
+image=${1:?Must provide an image file.}
+caption="${2:?Must provide a caption.}"
+offset="${3:-+0+50}"
+pointsize="${4:-140}"
+outdir="captioned"
+
+
+convert $image \
+	-fill White \
+	-undercolor '#000000a0' \
+	-gravity North \
+	-font 'Inconsolata' \
+	-pointsize $pointsize \
+	-annotate $offset "$caption" \
+	${outdir}/${image}
