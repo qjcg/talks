@@ -1,25 +1,29 @@
 #!/bin/bash
-# Convert sent slides to PDF format.
+# Convert sent-formatted slides to PDF.
 
 slidesFile=${1:?Must provide slides file as argument.}
 dependencies=(xdotool sent import convert)
 screenshotDir=screenshots
 screenshotDelay=1
 
-# Add 1 to subshell result, since last slide in file won't
-# have an empty line after it.
+# Calculate number of slides from number of
+# non-consecutive empty lines.
+# Add 1 to subshell result, since last slide in
+# file won't have an empty line after it.
 nslides=$(( 1 + $(uniq $slidesFile | grep '^$' | wc -l) ))
 
 
 # Check dependencies.
 for tool in ${dependencies[@]}; do
 	if ! hash $tool 2>/dev/null; then
-		echo Tool not found: $tool
+		echo Missing dependency: $tool
 		exit 1
 	fi
 done
 
-# Toggle statusbar.
+# Toggle dwm statusbar (to keep it out of
+# screenshots). Assumes statusbar is enabled
+# before this script is run.
 xdotool key Super+b
 
 # Start presentation.
