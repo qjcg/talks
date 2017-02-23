@@ -1,4 +1,5 @@
 #!/bin/bash
+# Caption image files, e.g. for use in sent presentations.
 
 image=${1:?Must provide an image file.}
 caption="${2:?Must provide a caption.}"
