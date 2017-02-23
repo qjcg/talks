@@ -1,0 +1,45 @@
+#!/bin/bash
+# Convert sent slides to PDF format.
+
+dependencies=(xdotool sent import convert)
+slidesFile=${1:?Must provide slides file as argument.}
+screenshotDir=slide_screenshots
+
+# Add 1 to subshell result, since last slide in file won't
+# have an empty line after it.
+nslides=$(( 1 + $(uniq $slidesFile | grep '^$' | wc -l) ))
+
+# Check dependencies.
+for tool in ${dependencies[@]}; do
+	if ! hash $tool 2>/dev/null; then
+		echo Tool not found: $tool
+		exit 1
+	fi
+done
+
+# Toggle statusbar.
+xdotool key Super+b
+
+# Start presentation.
+sent < $slidesFile &
+
+# Loop over slides and take a screenshot of each.
+# Insert delays via sleep to prevent
+mkdir -p $screenshotDir
+sleep 2
+for i in $(seq -w $nslides); do
+	import -window root ${screenshotDir}/${i}.png
+	sleep 1
+
+	# Move to next slide.
+	xdotool key n
+done
+
+# End presentation.
+xdotool key q
+
+# Generate PDF from screenshots.
+convert ${screenshotDir}/*.png ${slidesFile/.sent/.pdf}
+
+# Toggle statusbar.
+xdotool key Super+b

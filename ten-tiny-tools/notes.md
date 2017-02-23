@@ -1,0 +1,2 @@
+- Annotate images? <http://www.imagemagick.org/Usage/annotating/>
+- Review submodule logic: <https://git.wiki.kernel.org/index.php/GitSubmoduleTutorial>
