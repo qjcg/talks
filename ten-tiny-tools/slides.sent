@@ -18,14 +18,13 @@ YAGNI
 STDIN
 FUN
 
-What are
-you really
-doing?
+Like showing
+a journal
 
-Don't like it?
-Then it's not for you ;)
 
-horeb
+# START TOOLS
+
+1. horeb
 Speak in tongues
 
 ◅ ֺ ֺ 𐇠 ✜ ➂ ▧ 𐅩 ➖ ⌃ 𝝋
@@ -34,26 +33,27 @@ Speak in tongues
 
 Inspired by TempleOS
 
-4d
+2. 4d
 Enumerate the
 4th dimension
 
-megarepo
+3. megarepo
 Download github
 repos as submodules
 
-diplomat
+4. diplomat
 Generate PDF diplomas
 
-mtlcam
+5. mtlcam
 Download traffic
 cam images
 
-rps
+6. rps
+Rock Paper Scissors
 
-servant
+7. servant
 Simply Serve HTTP
 
-brightness
+8. brightness
 Screen brightness
 via CLI
