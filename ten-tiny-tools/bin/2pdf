@@ -1,9 +1,10 @@
 #!/bin/bash
 # Convert sent slides to PDF format.
 
-dependencies=(xdotool sent import convert)
 slidesFile=${1:?Must provide slides file as argument.}
-screenshotDir=slide_screenshots
+dependencies=(xdotool sent import convert)
+screenshotDir=screenshots
+screenshotDelay=1
 
 # Add 1 to subshell result, since last slide in file won't
 # have an empty line after it.
@@ -27,13 +28,13 @@ sent $slidesFile &
 # Loop over slides and take a screenshot of each.
 # Insert delays via sleep to prevent incorrect screenshots.
 mkdir -p $screenshotDir
-sleep 2
+sleep $screenshotDelay
 for i in $(seq -w $nslides); do
 	import -window root ${screenshotDir}/${i}.png
-	sleep 1
 
 	# Move to next slide.
 	xdotool key n
+	sleep $screenshotDelay
 done
 
 # End presentation.
