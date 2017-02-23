@@ -3,15 +3,15 @@ Tiny
 Tools
 by John Gosset
 
-Who?
-What?
-Why?
-
-@imgs/old-tools.jpg
+@imgs/captioned/old-toolsL.jpg
 
 Carpentry
 
 Takahashi
+
+Alpha quality!
+
+github.com/qjcg/___
 
 Unix Philosophy
 YAGNI
@@ -22,16 +22,10 @@ Like showing
 a journal
 
 
-# START TOOLS
-
 1. horeb
 Speak in tongues
 
-◅ ֺ ֺ 𐇠 ✜ ➂ ▧ 𐅩 ➖ ⌃ 𝝋
-◧ 𐄒 ℳ 🂬 𝔿 ב ▻ ℠ 𐅓 𐇭
-✨ 𐇘 ⚋ 𐇝 ⏒ ◭ 𝚰 🖿 🀂 
-
-Inspired by TempleOS
+@imgs/captioned/templeos_oracle.png
 
 2. 4d
 Enumerate the
@@ -41,18 +35,15 @@ Enumerate the
 3. megarepo
 Download github
 repos as submodules
-qjcg/megarepo
 
 
 4. diplomat
 Generate PDF diplomas
-qjcg/diplomat
 
 
 5. mtlcam
 Download traffic
 cam images
-qjcg/mtlcam
 
 
 6. rps
