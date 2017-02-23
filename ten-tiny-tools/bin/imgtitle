@@ -9,7 +9,7 @@ outdir="captioned"
 
 convert $image \
 	-fill White \
-	-undercolor '#000000a0' \
+	-undercolor '#000000c0' \
 	-gravity North \
 	-font 'Inconsolata' \
 	-pointsize $pointsize \
