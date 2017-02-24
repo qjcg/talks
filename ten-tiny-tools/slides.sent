@@ -30,6 +30,10 @@ UNIX PHILOSOPHY
   that is a universal interface.
 -- Peter H. Salus, A Quarter Century of Unix (1994)
 
+Go is
+Short & Simple for
+Moving & Doing
+
 @imgs/diary.jpg
 
 
@@ -82,8 +86,8 @@ cam images
 
 
 6. rps (epicrps)
-Rock Paper Scissors
-(model library + cmd)
+Rock Paper Scissors Forever
+(library + cmd)
 
 
 7. servant
@@ -108,10 +112,11 @@ for man pages.
 
 
 Takeaways:
-- JFDI / GSTI
-- Unix Philosophy
+- Go is short & simple, for moving & doing
+- JFDI & GSTI
 - Be humble & keep learning
-- Share!
+- Share! Most of these ten tools
+  were made public on GitHub only today
 
 
 ~ Conclusion ~
