@@ -1,4 +1,4 @@
-This talk was given at [Golang Montreal 4] on February 24, 2017.
+This talk was given at [Golang Montreal 4] on February 23, 2017.
 
 These slides are also on
 [speakerdeck](https://speakerdeck.com/qjcg/ten-tiny-tools).
