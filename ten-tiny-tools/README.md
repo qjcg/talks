@@ -1,6 +1,9 @@
-This talk was given at [#gomtl 4] on February 24, 2017.
+This talk was given at [Golang Montreal 4] on February 24, 2017.
 
-[#gomtl 4]: https://golangmontreal.org/en/events/gomtl-04-february-23rd/
+These slides are also on
+[speakerdeck](https://speakerdeck.com/qjcg/ten-tiny-tools).
+
+[Golang Montreal 4]: https://golangmontreal.org/en/
 
 
 # Ten Tiny Tools
