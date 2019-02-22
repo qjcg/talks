@@ -1,0 +1,26 @@
+{
+  "name": "mdx-deck-template",
+  "version": "0.1.0",
+  "description": "MDX Deck Talk Template",
+  "main": "index.js",
+  "keywords": [
+    "mdx",
+    "mdx-deck",
+    "slides",
+    "slide-deck",
+    "presentations",
+    "talks",
+    "templates"
+  ],
+  "author": "John Gosset",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^1.10.0"
+  },
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "pdf": "mdx-deck pdf --no-sandbox deck.mdx",
+    "pdfwide": "mdx-deck pdf --width 1920 --height 1080 --no-sandbox deck.mdx"
+  }
+}
