@@ -15,7 +15,9 @@
   "author": "John Gosset",
   "license": "ISC",
   "devDependencies": {
-    "mdx-deck": "^1.10.0"
+    "mdx-deck": "^1.10.0",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "raw-loader": "^1.0.0"
   },
   "scripts": {
     "start": "mdx-deck deck.mdx",
