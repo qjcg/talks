@@ -20,10 +20,11 @@ export default Split
 	title="Python"
 	code={require("!raw-loader!./code/demo.py")}
 	lang="python"
+	showNumbers={true}
 	steps={[
-		{ notes: "This is a pre-code note"},
-		{ range: [3,4] },
-		{ lines: [6], notes: "This is another line" }
+		{ notes: "This is a pre-code note" },
+		{ range: [3,4], notes: "Lines 3 and 4 are cool!" },
+		{ lines: [6], notes: "Nothing to see here..." }
 	]}
 />
 
