@@ -24,14 +24,15 @@ export default Split
 	steps={[
 		{ notes: "This is a pre-code note" },
 		{ range: [3,4], notes: "Lines 3 and 4 are cool!" },
-		{ lines: [6], notes: "Nothing to see here..." }
 	]}
 />
 
 ---
 
 <CodeSurfer
-	title="Go"
+	title={() => (
+		<h1 style={{ background: "blue", color: "yellow" }}>"Go"</h1>
+	)}
 	code={require("!raw-loader!./code/demo.go")}
 	lang="go"
 />
