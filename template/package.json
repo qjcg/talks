@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
+    "build": "mdx-deck build --no-html deck.mdx",
     "pdf": "mdx-deck pdf --no-sandbox deck.mdx",
     "pdfwide": "mdx-deck pdf --width 1920 --height 1080 --no-sandbox deck.mdx"
   }
