@@ -1,6 +1,6 @@
 #+Title: Cue Continuum
 #+Subtitle: Defining, Generating, and Validating Data with CUE
-Author: John Gosset
+#+Author: John Gosset
 
 * Goals
 
@@ -18,7 +18,7 @@ Author: John Gosset
 - "I just want to code"
 - "Just C and Makefiles"
 
-- Jason and Jyamal
+- Jason and Yamal
 - Kubernetes
 - Docker Compose
 - The "Cambrian Explosion" of config
@@ -40,6 +40,9 @@ Author: John Gosset
 - [[https://nix-community.github.io/nixago/engines/cue.html][nixago]]
 - [[https://kubevela.io/docs/platform-engineers/cue/basic][kubevela]]
 - [[https://github.com/grafana/thema][Thema]]
+
+** Using CUE from the Go API
+- [[https://cuetorials.com/go-api/][Go API (cuetorials.com)]]
 
 ** What are some alternatives to using CUE?
 
