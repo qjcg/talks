@@ -8,6 +8,7 @@
 - Visual (single-image slides, graphs, etc)
 - Technically excellent
 - Informative & useful (git repo)
+  - tiny runnable examples
 
 * Brainstorm
 ** TODO: "Problem Story"
@@ -15,6 +16,7 @@
 
 - The "config-free developer" (is a myth)
   - Embedded? But Yocto, etc
+  - I'm not DevOps, I'm not SRE
 - "I just want to code"
 - "Just C and Makefiles"
 
@@ -30,9 +32,9 @@
 - Slow development
 - No query language
 - No encoding
-- No testing
-- No package management
-- No LSP server
+- No testing (but see unity)
+- No package management (but see universe.dagger.io)
+- No editor support (e.g. LSP server)
 
 ** Examples of CUE in the wild
 
@@ -42,7 +44,16 @@
 - [[https://github.com/grafana/thema][Thema]]
 
 ** Using CUE from the Go API
+
 - [[https://cuetorials.com/go-api/][Go API (cuetorials.com)]]
+- Features
+  - Load CUE code into CUE values
+  - Print CUE values with various options
+  - Extract CUE values, loop over fields and lists
+  - Extract and work with CUE attributes
+  - Unify and validate CUE and Go values
+  - Decode to, and encode from, CUE and Go values
+  - Validate, constrain, and complete Go values
 
 ** What are some alternatives to using CUE?
 
@@ -50,7 +61,6 @@
 - jsonnet
 - dhall
 - nickel
-  - [[https://github.com/tweag/nickel/blob/master/RATIONALE.md#comparison-with-alternatives][Why Nickel?]]
 - nix
 - [[https://bass-lang.org/][bass]]
 - pulimi
@@ -64,8 +74,19 @@
 - protocol buffers
 - S-expressions
 
+*** Comparisons
+
+- [[https://cuelang.org/docs/usecases/configuration/#comparisons][Cue: Comparisons]]
+- [[https://jsonnet.org/articles/comparisons.html][Jsonnet: Comparisons]]
+- [[https://github.com/tweag/nickel/blob/master/RATIONALE.md#comparison-with-alternatives][Nickel: Comparison With Alternatives]]
+- [[https://www.pulumi.com/docs/intro/vs/][Pulimi: Comparisons]]
+
 ** Possibilities for the future
 
 - CUE takes over the world
 - "config" languages are recognized to be a mistake
   - [[https://matt-rickard.com/advanced-configuration-languages-are-wrong/][Every Sufficiently Advanced Configuration Lanaguage is Wrong]] (see also [[https://news.ycombinator.com/item?id=31870924][HN Discussion]])
+
+** Resources
+
+- [[https://docs.dagger.io/1226/coding-style][CUE package coding style (dagger.io)]]
