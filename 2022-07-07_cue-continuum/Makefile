@@ -5,6 +5,6 @@ build:
 	mkdir -p $(OUTDIR)
 	CGO_ENABLED=0 go build -o $(OUTDIR) ./cmd/...
 
-
+.PHONY: clean
 clean:
 	rm -rf $(OUTDIR)
