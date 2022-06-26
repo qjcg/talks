@@ -26,6 +26,11 @@
 - The "Cambrian Explosion" of config
 
 ** What is CUE?
+
+- Superset of JSON
+- Open Source Language
+- Configure Unify Execute
+
 ** What is good about CUE?
 ** What is bad about CUE?
 
@@ -86,6 +91,11 @@
 - CUE takes over the world
 - "config" languages are recognized to be a mistake
   - [[https://matt-rickard.com/advanced-configuration-languages-are-wrong/][Every Sufficiently Advanced Configuration Lanaguage is Wrong]] (see also [[https://news.ycombinator.com/item?id=31870924][HN Discussion]])
+
+** Cue Basics
+*** Definining Data
+*** Generating Data
+*** Validating Data
 
 ** Resources
 

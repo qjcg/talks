@@ -1,0 +1,31 @@
+<deck>
+
+  <title>Sample Deck</title>
+
+  <canvas width="1024" height="768"/>
+
+  <slide bg="maroon" fg="white" duration="1s">
+    <image xp="20" yp="30" width="256" height="256" name="picture.png"/>
+    <text xp="20" yp="80" sp="3" link="http://example.com/">Deck uses these elements</text>
+    <line xp1="20" yp1="75" xp2="90" yp2="75" sp="0.3" color="rgb(127,127,127)"/>
+    <list xp="20" yp="70" sp="1.5">
+      <li>canvas</li>
+      <li>slide</li>
+      <li>text</li>
+      <li>list</li>
+      <li>image</li>
+      <li>line</li>
+      <li>rect</li>
+      <li>ellipse</li>
+      <li>curve</li>
+      <li>arc</li>
+    </list>
+    <line    xp1="20" yp1="10" xp2="30" yp2="10"/>
+    <rect    xp="35"  yp="10" wp="4" hp="3" color="rgb(127,0,0)"/>
+    <ellipse xp="45"  yp="10" wp="4" hp="3" color="rgb(0,127,0)"/>
+    <curve   xp1="60" yp1="10" xp2="75" yp2="20" xp3="70" yp3="10" />       
+    <arc     xp="55"  yp="10" wp="4" hp="3" a1="0" a2="180" color="rgb(0,0,127)"/>
+    <polygon xc="75 75 80" yc="8 12 10" color="rgb(0,0,127)"/>
+  </slide>
+
+</deck>
