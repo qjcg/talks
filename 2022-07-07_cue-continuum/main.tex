@@ -1,0 +1,282 @@
+% CUE Talk
+
+% Colors
+\usecolors[crayola]
+\setupbackgrounds[page][background=color,backgroundcolor=black]
+\setupcolors[textcolor=cyan]
+
+% Page Setup
+\setuppapersize[S6]
+\setuppagenumbering[state=stop]
+\setuptolerance[horizontal,verytolerant,stretch] 
+\setupitemize[inbetween=] % Avoid ridiculously large vertical spaces between bullet points.
+
+% Columns
+\definecolumnset[TwoColumns][n=2, separator=rule]
+
+% Images
+\setupexternalfigures[
+  location={local,global},
+  directory={_images},
+  ]
+
+% Links
+\setupinteraction[state=start, color=SkyBlue, style=\tf]
+
+% Fonts
+\switchtobodyfont[gentium,20pt]
+
+% Font for code formatting
+\definetyping[code][
+  numbering=line,
+  bodyfont=modern,tt,small,
+  ]
+
+
+% Define a "slide" head (each on own page).
+\definehead[slide][subject]
+\setuphead[slide][page=yes, style=\bfb]
+
+% Big, "Takahashi Method" slide.
+\define[1]\slideBig{
+  \startslide
+    \startalign[middle]
+    \scale[factor=fit]{#1}
+    \stopalign
+  \stopslide
+}
+
+
+
+% CONTENT
+\starttext
+
+% TITLE SLIDE
+\startstandardmakeup
+
+  \title{\bf \scale[wfactor=max]{Exploring the CUE Continuum}}
+
+  \startcolor[white]
+
+  {\tfx \it Defining, Generating, and Validating Data with CUE and Go}
+
+  {\tfxx John Gosset \| 2022-07-07 \| Golang Montreal}
+
+  \stopcolor
+\stopstandardmakeup
+
+%\setupfootertexts[{\color[white]{\tfxx \midaligned{\hfill \llap{John Gosset}}}}]
+%\setupfooter[state=start]
+
+% BEGINNING
+\startcolor[lightorange]
+
+  \startslide[title=Overview]
+    \startitemize
+    \item Audience: Curious Go Devs, the JSON/YAML-demoralized
+    \item Goal: Share my interest in CUE+Go, and maybe pique yours!
+    \item Non-Goal: Comprehensive overview of CUE
+    \item Topics:
+      \startitemize
+      \item Background
+      \item CUE Basics
+      \item CUE via Go
+      \item Going Further
+      \stopitemize
+    \stopitemize
+  \stopslide
+
+
+
+\startslide[title=The Landscape]
+  \startitemize
+  \item Configuration Languages (\type{.rc}, \type{.ini}, \type{.env}...)
+  \item Serialization Languages (JSON, YAML, TOML)
+  \item Markup Languages (XML)
+  \item --> Structured Data
+  \stopitemize
+\stopslide
+
+\slideBig{I Just Want to Code!}
+
+\page
+  \midaligned{\externalfigure[cue.png]}
+
+  \midaligned{\quotation{Configure, Unify, Execute}}
+
+  \midaligned{\goto{cuelang.org}[url(https://cuelang.org)]}
+\page
+
+\startslide[title=CUE Use Cases]
+  \startitemize
+  \item Configuration
+  \item Data Validation
+  \item Schema Definition
+  \item Code Generation and Extraction
+  \item Querying (WIP)
+  \item Scripting
+  \stopitemize
+\stopslide
+
+\startslide[title=About CUE]
+  \startitemize
+  \item Created by Marcel von Lohuizen (ex-Google, Go Team)
+  \item 15 years experience on GCL
+  \item Open Source
+  \item NON-turing complete
+  \item Superset of JSON
+  \item Big Idea: Types are Values
+  \item Main implementation in Go
+  \item Heavily Go-inspired module system
+  \stopitemize
+\stopslide
+
+
+\page
+  \midaligned{\externalfigure[marcel.png][height=8cm]}
+\page
+
+\page
+\quotation{A lattice is a partially ordered set, in which every two elements have a unique least upper bound (join) and greatest lower bound (meet). By definition this means there is always a single root (top) and a single leaf (bottom).}
+
+-- \it The Logic of CUE
+\page
+
+
+\page
+  \midaligned{\externalfigure[lattice1.png][height=8cm]}
+\page
+
+\page
+  \midaligned{\externalfigure[lattice2.png][height=8cm]}
+\page
+
+\startslide[title=CUE in the Wild]
+
+  \startitemize
+    \tfx
+  \item \goto{Dagger}[url(https://dagger.io/)]: Portable DevKit for CI/CD Pipelines
+  \item \goto{Kubevela}[url(https://kubevela.io/)]: Deployment Plans as Workflow
+  \item \goto{grafana/thema}[url(https://github.com/grafana/thema)]: CUE-based framework for portable, evolvable schema (WIP)
+  \item \goto{nixago}[url(https://nix-community.github.io/nixago/engines/cue.html)]: Generate config files using Nix (CUE engine)
+  \item \goto{cubectl}[url(https://github.com/cuebernetes/cuebectl)]: Truly declarative kubernetes manifests via cuelang
+  \item \goto{cue-flux-controller}[url(https://github.com/phoban01/cue-flux-controller)]: A Kubernetes controller for CUE via Flux
+  \stopitemize
+\stopslide
+
+\page
+  \midaligned{\externalfigure[solomon.png]}
+\page
+
+
+
+
+\stopcolor
+
+% MIDDLE
+\startcolor[lightgreen]
+
+\startslide[title=CUE Basics]
+  Via \goto{cuetorials.com}[url(https://cuetorials.com)]
+
+  \startitemize
+  \item \goto{JSON Superset}[url(https://cuelang.org/play/?id=qhYIy7ED_zn#cue@export@cue)]
+  \item \goto{Definitions}[url(https://cuelang.org/play/?id=-M1_qizIclD#cue@export@cue)]
+  \item \goto{Conjunctions}[url(https://cuelang.org/play/?id=7SR677XCUc0#cue@export@cue)]
+  \item \goto{Disjunctions}[url(https://cuelang.org/play/?id=3PJ3ka_unU7#cue@export@cue)]
+  \item \goto{Defaults and Optionals}[url(https://cuelang.org/play/?id=eakbnQa2zzC#cue@export@cue)]
+  \item \goto{Building Up Values}[url(https://cuelang.org/play/?id=RtAWAMD0x1i#cue@export@cue)]
+  \stopitemize
+\stopslide
+
+\startslide[title=CUE via Go]
+  \startitemize
+  \item Load CUE code into CUE values
+  \item Print CUE values with various options
+  \item Extract CUE values, loop over fields and lists
+  \item Extract and work with CUE attributes
+  \item Unify and validate CUE and Go values
+  \item Decode to, and encode from, CUE and Go values
+  \item Validate, constrain, and complete Go values
+  \stopitemize
+\stopslide
+
+\stopcolor
+
+% END
+\startcolor[lightblue]
+
+\startslide[title=Alternatives]
+  \startitemize
+  \item XML
+  \item \goto{JSON}[url(https://www.json.org/)]
+  \item \goto{YAML}[url(https://yaml.org/)]
+  \item \goto{Jsonnet}[url(https://jsonnet.org/)]
+  \item \goto{Dhall}[url(https://dhall-lang.org/)]
+  \item \goto{Nickel}[url(https://nickel-lang.org/)]
+  \item \goto{Terraform/HCL}[url(https://www.terraform.io/language)]
+  \item \goto{Pulumi}[url(https://www.pulumi.com/)]
+  \item ...
+  \stopitemize
+\stopslide
+
+\startslide[title=CUE Pros and Cons]
+  \startitemize
+  \item Pros
+
+  \startitemize
+  \item Mathmatically elegant big idea (value lattice) distinguishes from the pack
+  \item Excellent interop w/ Go
+  \item Familiar for Go devs
+  \item Emerging interest
+  \stopitemize
+
+  \item Cons
+  \startitemize
+  \item Pace of dev could be faster
+  \item Some features missing/roadmap (pkg management, query, testing, LSP)
+  \stopitemize
+
+  \stopitemize
+\stopslide
+
+\startslide[title=Next Steps for the Curious]
+  \startitemize
+  \item \goto{cuelang.org/docs}[url(https://cuelang.org/docs)]
+  \item \goto{cuelang.org/play}[url(https://cuelang.org/play)]
+  \item \goto{cuetorials.com}[url(https://cuetorials.com/)]
+  \item \goto{cuetorials.com/go-api}[url(https://cuetorials.com/go-api/)]
+  \item \goto{dagger.io: What is CUE?}[url(https://docs.dagger.io/1215/what-is-cue/)]
+  \item \goto{dagger.io: CUE Package Coding Style}[url(https://docs.dagger.io/1226/coding-style/)]
+  \item \goto{The Configuration Complexity Curse}[url(https://blog.cedriccharly.com/post/20191109-the-configuration-complexity-curse/)]
+  \stopitemize
+\stopslide
+
+\startslide[title=Summary]
+  \startitemize
+    \item Background
+    \item CUE Basics
+    \item CUE via Go
+    \item Going Further
+  \stopitemize
+\stopslide
+
+
+\page
+
+\midaligned{\externalfigure[q.jpg][height=5cm]}
+
+\quotation{For that one fraction of a second you were open to options you never considered. That is the exploration that awaits you.
+  Not mapping stars and studying nebulae, but charting the unknown possibilities of existance!}
+
+\par
+
+-- \it John de Lancie speaking as \quote{Q}
+
+\page
+
+\slideBig{Thank You!}
+
+\stopcolor
+
+\stoptext

@@ -14,6 +14,8 @@
 ** TODO: "Problem Story"
 *** Ideas
 
+- "In the beginning, there was XYZTODO"
+
 - The "config-free developer" (is a myth)
   - Embedded? But Yocto, etc
   - I'm not DevOps, I'm not SRE
