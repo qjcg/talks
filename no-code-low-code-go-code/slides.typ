@@ -252,7 +252,11 @@ func (r *reverseProcessor) Process(ctx context.Context, m *service.Message) (ser
   - Or, as Rob Pike put it: "Less is Exponentially More"
 - Prioritize write the interesting code that matters
 - Consider low code for simple bridging, enrichment, filtering
-- As a developer, you want low code that you can extend
+- Benthos is a sweet spot for Go developers:
+  - Low code stream processing
+  - Tons of out of the box plugins
+  - Awesome observability instrumentation
+  - Can be extended with Go
 
 
 == Further Reading
