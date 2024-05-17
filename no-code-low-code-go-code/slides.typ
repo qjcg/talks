@@ -256,7 +256,7 @@ func (r *reverseProcessor) Process(ctx context.Context, m *service.Message) (ser
   - Low code stream processing
   - Tons of out of the box plugins
   - Awesome observability instrumentation
-  - Can be extended with Go
+  - Can be extended with Go!
 
 
 == Further Reading
