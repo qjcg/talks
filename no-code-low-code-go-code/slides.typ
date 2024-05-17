@@ -122,7 +122,7 @@ be writing in C++ forever...
   - Code reuse
   - Working at the right level of abstraction
   - Out of the box functionality
-  - Visual modelling (but is this )
+  - Visual modelling (BUT is this a must?)
   - Empower "citizen developers"
 
 == Low Code Tools
@@ -250,7 +250,7 @@ func (r *reverseProcessor) Process(ctx context.Context, m *service.Message) (ser
 
 - Keep it simple
   - Or, as Rob Pike put it: "Less is Exponentially More"
-- Prioritize write the interesting code that matters
+- Prioritize writing the interesting code that matters
 - Consider low code for simple bridging, enrichment, filtering
 - Benthos is a sweet spot for Go developers:
   - Low code stream processing
